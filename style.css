@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #03084b;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+ul, .card-wrapper, nav, header{
+    display: flex;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#hero {
+    background-color: #03084b;
+    
+}
+#hero h1, #hero h2 {
+    color: white;
+}
+
+#hero h2 {
+    font-size: 40px;
+}
+
+header, .content {
+    margin-bottom: 200px;
+}
+
+nav, .content.odd, header, .even-wrapper {
+    max-width: 1500px;
+    margin: 0 auto 200px auto;
+}
+
+.even-wrapper {
+    margin: 0 auto;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 6px;
+    margin-bottom: 100px;
+
+}
+
+li {
+    margin-right: 10px;
+}
+
+header {
+       padding: 12px;
+}
+
+.header-content, .header-photo {
+   flex: 1 1 50%;
+}
+
+.header-content {
+    margin-bottom: 15px;
+}
+
+header button {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1637px) {
+    .header-content, .header-photo {
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+    }
+    header {
+        flex-direction: column;
+    }
+}
+
+.header-photo img {
+    width: inherit;
+    height: 400px;
+}
+
+
+.header-content h1 {
+    font-size: 100px;
+}
+
+.header-content p {
+    font-size: 25px;
+    width: 700px;
+    
+}
+
+.card-wrapper {
+    flex-wrap: wrap;
+}
+
+.content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: calc(100%/4);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content.even {
+    background-color: rgb(102, 102, 102);
+    margin 0;
+    padding: 70px 5px;
+}
+
+
+.quote {
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.cta {
+    border: 1px solid black;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #03084b;
+    border-radius: 5px;
+}
+
+.cta p {
+   color: white;
+}
+
+.cta button {
+    background-color: #03084b;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+footer {
+    background-color: #03084b;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
